@@ -1,0 +1,25 @@
+<div class="flex-container">
+    <div *ngFor="let m of every">
+        <div *ngIf="fil=='All' || fil==m.continents[0]">
+            <div class="child" *ngIf="sea=='' || m.name.common.toLowerCase().includes(sea.toLowerCase())" appDirec>
+                <div class="cen">
+                    <div >
+                        <h2>{{m.name.common}}</h2>
+                    </div>
+                    <div >
+                        <img [src]="m.flags.png">
+                    </div>
+                    <div >
+                        <p>Continents: {{m.continents[0]}}</p>
+                    </div>
+                    <div>
+                        <p>Area: {{m.area}} km²</p>
+                    </div> 
+                    <div>
+                        <p>Capital: {{m.capital}}</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

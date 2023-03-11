@@ -1,0 +1,9 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">Countries</a>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="search" [ngModelOptions]="{standalone: true}">
+        <button class="btn btn-outline-success" (click)="onc()" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
